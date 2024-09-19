@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMW Information</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: url('https://www.bmw.com/content/dam/bmw/marketBMWCOM/bmw_com/categories/office/building/bmw-building-night.jpg') no-repeat center center fixed;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            color: #fff;
+            overflow: auto; /* Permite el desplazamiento */
+        }
+
+        .content-container {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5);
+            width: 80%;
+            max-width: 800px;
+            margin: 20px auto; /* Centra el contenedor horizontalmente */
+            animation: fadeIn 1s ease-in-out;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        h1 {
+            color: #fff;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: #1a73e8;
+        }
+
+        .info-section {
+            margin: 20px 0;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #333;
+            transition: transform 0.3s, box-shadow 0.3s;
+            position: relative;
+            text-align: center;
+        }
+
+        .info-section:hover {
+            transform: scale(1.02);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+        }
+
+        .info-section p {
+            line-height: 1.6;
+            color: #fff;
+        }
+
+        .info-image {
+            width: 200px;
+            height: auto;
+            border-radius: 8px;
+            margin: 10px auto;
+            display: block;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .speed {
+            font-weight: bold;
+            color: #1a73e8;
+        }
+
+        .back-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            background-color: #1a73e8;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .back-button:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
+        }
+
+        .carrito-small {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            width: 60px;
+            height: 60px;
+            background: url('https://img.icons8.com/external-flat-juicy-fish/64/external-shopping-cart-flat-flat-juicy-fish.png') no-repeat center;
+            background-size: contain;
+            animation: moveCarritoSmall 4s linear infinite;
+        }
+
+        @keyframes moveCarritoSmall {
+            0% { transform: translateX(0); }
+            50% { transform: translateX(300px); }
+            100% { transform: translateX(0); }
+        }
+
+        .carrito-large {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            width: 100px;
+            height: 100px;
+            background: url('https://img.icons8.com/external-flat-juicy-fish/64/external-shopping-cart-flat-flat-juicy-fish.png') no-repeat center;
+            background-size: contain;
+            animation: moveCarritoLarge 6s linear infinite;
+        }
+
+        @keyframes moveCarritoLarge {
+            0% { transform: translateX(0); }
+            50% { transform: translateX(-300px); }
+            100% { transform: translateX(0); }
+        }
+
+        .moto {
+            position: fixed;
+            bottom: 80px;
+            left: 10px;
+            width: 80px;
+            height: 45px;
+            background: url('https://img.icons8.com/ios-filled/50/motorcycle.png') no-repeat center;
+            background-size: contain;
+            animation: moveMoto 5s linear infinite;
+        }
+
+        @keyframes moveMoto {
+            0% { transform: translateX(0); }
+            50% { transform: translateX(300px); }
+            100% { transform: translateX(0); }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="content-container">
+        <h1>BMW Information</h1>
+
+        <div class="info-section">
+            <h2>History of BMW</h2>
+            <p>The BMW company was founded on March 7, 1916, by Karl Rapp, Franz Josef Popp, and Gustav Otto. It originally produced aircraft engines.</p>
+            <img src="https://i.pinimg.com/originals/5c/ac/42/5cac420b02dd599d25e6d0140565b34d.jpg" alt="BMW History" class="info-image">
+        </div>
+
+        <div class="info-section">
+            <h2>The Best Sports Car</h2>
+            <p>The <strong>BMW M5 CS</strong> is the fastest BMW sports car, with an acceleration from 0 to 100 km/h in 3 seconds. It features a V8M TwinPower Turbo engine with 625 horsepower and a maximum speed of <span class="speed">250 km/h</span>.</p>
+            <img src="https://www.drive.gr/sites/default/files/node-files/photos/news/2021/01/bmw_m5_cs_main.jpg" alt="BMW M5 CS" class="info-image">
+        </div>
+
+        <div class="info-section">
+            <h2>The Best Exclusive Car</h2>
+            <p>The <strong>BMW M8 GTR</strong> is one of BMW's exclusive cars, with a V8 M TwinPower Turbo engine and 625 horsepower. It accelerates from 0 to 100 km/h in 3.2 seconds and has a top speed of <span class="speed">305 km/h</span>.</p>
+            <img src="https://files.hodoor.world/main/a25b39af-cae3-4476-b2f2-f55c16c3b320.jpg" alt="BMW M8 GTR" class="info-image">
+        </div>
+
+        <a href="index.html" class="back-button">Back to Menu</a>
+    </div>
+
+    <div class="carrito-small"></div>
+    <div class="carrito-large"></div>
+    <div class="moto"></div>
+</body>
+</html>

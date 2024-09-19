@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('https://source.unsplash.com/1920x1080/?nature,landscape') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .menu-container {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 40px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+            animation: fadeIn 2s ease-in-out;
+            position: relative;
+            z-index: 1;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        h1 {
+            margin-bottom: 30px;
+            font-size: 2.5rem;
+        }
+
+        .menu-button {
+            display: inline-block;
+            margin: 10px;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 8px;
+            background-color: #1a73e8;
+            color: white;
+            font-size: 1.2rem;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .menu-button:hover {
+            background-color: #155bb5;
+            transform: scale(1.05);
+        }
+
+        .menu-button:active {
+            background-color: #0d47a1;
+            transform: scale(1);
+        }
+
+        .background-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.3);
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+    <div class="background-overlay"></div>
+    <div class="menu-container">
+        <h1>Welcome to Our Motorcycle Information Hub</h1>
+        <a href="yamaha.html" class="menu-button">Yamaha Information</a>
+        <a href="bmw.html" class="menu-button">BMW Information</a>
+    </div>
+</body>
+</html>

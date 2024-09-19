@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yamaha Information</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: url('https://www.hdwallpapers.in/download/sports_bike_digital_art_4k_hd-wallpaper.jpg') no-repeat center center fixed;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            color: #fff;
+            overflow: auto; /* Permite el desplazamiento */
+        }
+
+        .content-container {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5);
+            width: 80%;
+            max-width: 800px;
+            margin: 20px auto; /* Centra el contenedor horizontalmente */
+            animation: fadeIn 1s ease-in-out;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        h1 {
+            color: #fff;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: #f4c542;
+        }
+
+        .info-section {
+            margin: 20px 0;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #333;
+            transition: transform 0.3s, box-shadow 0.3s;
+            position: relative;
+            text-align: center;
+        }
+
+        .info-section:hover {
+            transform: scale(1.02);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+        }
+
+        .info-section p {
+            line-height: 1.6;
+            color: #fff;
+        }
+
+        .info-image {
+            width: 200px;
+            height: auto;
+            border-radius: 8px;
+            margin: 10px auto;
+            display: block;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .speed {
+            font-weight: bold;
+            color: #f4c542;
+        }
+
+        .back-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            background-color: #f4c542;
+            color: #333;
+            font-size: 16px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .back-button:hover {
+            background-color: #d4a634;
+            transform: scale(1.05);
+        }
+
+        .carrito-small {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            width: 60px;
+            height: 60px;
+            background: url('https://img.icons8.com/external-flat-juicy-fish/64/external-shopping-cart-flat-flat-juicy-fish.png') no-repeat center;
+            background-size: contain;
+            animation: moveCarritoSmall 4s linear infinite;
+        }
+
+        @keyframes moveCarritoSmall {
+            0% { transform: translateX(0); }
+            50% { transform: translateX(300px); }
+            100% { transform: translateX(0); }
+        }
+
+        .carrito-large {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            width: 100px;
+            height: 100px;
+            background: url('https://img.icons8.com/external-flat-juicy-fish/64/external-shopping-cart-flat-flat-juicy-fish.png') no-repeat center;
+            background-size: contain;
+            animation: moveCarritoLarge 6s linear infinite;
+        }
+
+        @keyframes moveCarritoLarge {
+            0% { transform: translateX(0); }
+            50% { transform: translateX(-300px); }
+            100% { transform: translateX(0); }
+        }
+
+        .moto {
+            position: fixed;
+            bottom: 80px;
+            left: 10px;
+            width: 80px;
+            height: 45px;
+            background: url('https://img.icons8.com/ios-filled/50/motorcycle.png') no-repeat center;
+            background-size: contain;
+            animation: moveMoto 5s linear infinite;
+        }
+
+        @keyframes moveMoto {
+            0% { transform: translateX(0); }
+            50% { transform: translateX(300px); }
+            100% { transform: translateX(0); }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="content-container">
+        <h1>Yamaha Information</h1>
+
+        <div class="info-section">
+            <h2>History of Yamaha</h2>
+            <p>The Yamaha company was created on July 1, 1955. The founder was Genichi Kawakami.</p>
+            <img src="https://www.yamaha-racing.com.br/wp-content/uploads/2021/07/Genichi-Kawakami-presidente-da-Yamaha-Corporation-de-1950-a-1977-e-novamente-de-1980-a-1983-750x370.jpg" alt="Yamaha History" class="info-image">
+        </div>
+
+        <div class="info-section">
+            <h2>The Best Sports Motorcycle</h2>
+            <p>The <strong>Yamaha YZF-R1M 2023</strong> is renowned for its incredible 998 cc crossplane four-cylinder engine. It has a displacement of 998cc and a top speed of <span class="speed">298 km/h</span>. The price is equivalent to €30,899.</p>
+            <img src="http://i2.wp.com/www.asphaltandrubber.com/wp-content/uploads/2014/11/2015-Yamaha-YZF-R1M-23.jpg" alt="Yamaha YZF-R1M" class="info-image">
+        </div>
+
+        <div class="info-section">
+            <h2>The Best Motorcycle in Cross</h2>
+            <p>The <strong>KTM 450 SX-F</strong> is considered the most powerful engine in the market. With a 449cc engine, it reaches speeds of up to <span class="speed">200 km/h</span> and offers immediate engine response, making it arguably the fastest cross motorcycle in the world.</p>
+            <img src="https://www.scottpowersports.com/media/1582577982_IMG_0069.jpg" alt="KTM 450 SX-F" class="info-image">
+        </div>
+
+        <a href="index.html" class="back-button">Back to Menu</a>
+    </div>
+
+    <div class="carrito-small"></div>
+    <div class="carrito-large"></div>
+    <div class="moto"></div>
+</body>
+</html>
